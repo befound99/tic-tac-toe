@@ -1,0 +1,47 @@
+.tik-tak-toe {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tik-tak-toe-result {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}
+.tik-tak-toe-choosing {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.tik-tak-toe__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  gap: 5px;
+}
+.tik-tak-toe__grid-cell {
+  background-color: var(--clr-slate800);
+  font-size: 4rem;
+}
+.cell1 {
+  border-top-left-radius: 10px;
+}
+.cell2 {
+  border-top-right-radius: 10px;
+}
+.cell3 {
+  border-bottom-left-radius: 10px;
+}
+.cell4 {
+  border-bottom-right-radius: 10px;
+}
+.fa-xmark {
+  color: rgb(168, 62, 62);
+}
+.fa-o {
+  color: rgb(66, 160, 66);
+}
